@@ -197,8 +197,6 @@ def delivery_status() -> dict[str, Any]:
 def produtos_ativos() -> dict[str, dict[str, Any]]:
     config = read_delivery_config()
     produtos = config.get("produtos", {})
-    if not produtos:
-        produtos = read_produtos()
     ativos = {}
     for codigo, produto in produtos.items():
         produto = normalize_produto(codigo, produto)
