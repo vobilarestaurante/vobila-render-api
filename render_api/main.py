@@ -47,8 +47,27 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def normalize_produto(codigo: str, produto: dict[str, Any]) -> dict[str, Any]:
+    codigo_limpo = str(codigo or produto.get("codigo", "")).strip()
+    submenu = []
+    if isinstance(produto.get("submenu"), list):
+        for index, item in enumerate(produto.get("submenu", []), start=1):
+            if not isinstance(item, dict):
+                continue
+            nome = str(item.get("nome", "")).strip()
+            if not nome:
+                continue
+            try:
+                preco_item = float(str(item.get("preco", 0.0)).replace(",", ".") or 0.0)
+            except (TypeError, ValueError):
+                preco_item = 0.0
+            codigo_item = str(item.get("codigo", "") or f"{codigo_limpo}-SUB{index}").strip()
+            submenu.append({
+                "codigo": codigo_item,
+                "nome": nome,
+                "preco": preco_item,
+            })
     return {
-        "codigo": str(codigo or produto.get("codigo", "")).strip(),
+        "codigo": codigo_limpo,
         "nome": str(produto.get("nome", "")).strip(),
         "preco": float(produto.get("preco", 0.0) or 0.0),
         "setor": str(produto.get("setor", "")).strip(),
@@ -58,6 +77,8 @@ def normalize_produto(codigo: str, produto: dict[str, Any]) -> dict[str, Any]:
         "imagem": str(produto.get("imagem", "") or "").strip(),
         "bloqueado": str(produto.get("bloqueado", "nao") or "nao").strip(),
         "ativo": bool(produto.get("ativo", True)),
+        "tem_submenu": "sim" if str(produto.get("tem_submenu", "nao") or "nao").strip().lower() == "sim" and submenu else "nao",
+        "submenu": submenu,
     }
 
 
