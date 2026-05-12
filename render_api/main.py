@@ -265,6 +265,10 @@ class AdminProdutoPayload(BaseModel):
     produto: dict[str, Any]
 
 
+class AdminProdutosPayload(BaseModel):
+    produtos: dict[str, dict[str, Any]]
+
+
 app = FastAPI(title="Vobila Delivery API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
@@ -510,6 +514,27 @@ def admin_upsert_delivery_web_produto(
     produtos[codigo_limpo] = produto_normalizado
     write_json(DELIVERY_CONFIG_PATH, config)
     return {"ok": True, "produto": produto_normalizado}
+
+
+@app.put("/admin/delivery-web/produtos")
+def admin_replace_delivery_web_produtos(
+    payload: AdminProdutosPayload,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    config = read_delivery_config()
+    produtos_normalizados: dict[str, dict[str, Any]] = {}
+    for codigo, produto in (payload.produtos or {}).items():
+        codigo_limpo = str(codigo or "").strip()
+        if not codigo_limpo:
+            continue
+        produto_normalizado = normalize_produto(codigo_limpo, produto or {})
+        if not produto_normalizado.get("nome"):
+            continue
+        produtos_normalizados[codigo_limpo] = produto_normalizado
+    config["produtos"] = produtos_normalizados
+    write_json(DELIVERY_CONFIG_PATH, config)
+    return {"ok": True, "quantidade": len(produtos_normalizados)}
 
 
 @app.delete("/admin/delivery-web/produtos/{codigo}")
