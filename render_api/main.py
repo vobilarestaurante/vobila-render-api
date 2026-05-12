@@ -296,10 +296,6 @@ class AdminProdutosPayload(BaseModel):
     produtos: dict[str, dict[str, Any]]
 
 
-class AdminDeliveryWebLayoutPayload(BaseModel):
-    layout: dict[str, Any]
-
-
 class AdminAssetPayload(BaseModel):
     filename: str
     content_base64: str
@@ -610,56 +606,6 @@ def admin_replace_delivery_web_produtos(
     config["produtos"] = produtos_normalizados
     write_json(DELIVERY_CONFIG_PATH, config)
     return {"ok": True, "quantidade": len(produtos_normalizados)}
-
-
-@app.put("/admin/delivery-web/layout")
-def admin_update_delivery_web_layout(
-    payload: AdminDeliveryWebLayoutPayload,
-    x_admin_token: str | None = Header(default=None),
-) -> dict[str, Any]:
-    require_admin_token(x_admin_token)
-    config = read_delivery_config()
-    layout_atual = config.setdefault("layout", {})
-    if not isinstance(layout_atual, dict):
-        layout_atual = {}
-        config["layout"] = layout_atual
-
-    novo_layout = payload.layout or {}
-    banners = novo_layout.get("banners_index", [])
-    if isinstance(banners, list):
-        layout_atual["banners_index"] = [
-            str(item or "").strip()
-            for item in banners
-            if str(item or "").strip()
-        ]
-
-    try:
-        layout_atual["banner_intervalo_ms"] = max(
-            1000,
-            int(float(novo_layout.get("banner_intervalo_ms", 5000) or 5000)),
-        )
-    except (TypeError, ValueError):
-        layout_atual["banner_intervalo_ms"] = 5000
-
-    allowed_keys = {
-        "cor_topo",
-        "cor_texto_topo",
-        "nome_logo",
-        "logo_topo",
-        "cor_hover_produto",
-        "cor_texto_hover_produto",
-        "cor_botao_hover_produto",
-        "cor_texto_botao_hover_produto",
-        "cor_rodape",
-        "cor_texto_rodape",
-        "logo_rodape",
-    }
-    for key in allowed_keys:
-        if key in novo_layout:
-            layout_atual[key] = str(novo_layout.get(key, "") or "").strip()
-
-    write_json(DELIVERY_CONFIG_PATH, config)
-    return {"ok": True, "layout": layout_atual}
 
 
 @app.delete("/admin/delivery-web/produtos/{codigo}")
