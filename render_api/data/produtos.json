@@ -1,0 +1,2814 @@
+{
+    "1": {
+        "nome": "+ Adicional Carne",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "2": {
+        "nome": "+ Adicional Carne Seca",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "3": {
+        "nome": "+ Adicional Frango",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "4": {
+        "nome": "+ Adicional Manteira",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "5": {
+        "nome": "+ Adicional Ovo",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "6": {
+        "nome": "+ Adicional Queijo",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros"
+    },
+    "7": {
+        "nome": "Cafe",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Café da Manhã",
+        "imagem": "img/produtos/7.png",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "8": {
+        "nome": "CAFE + PAO",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã",
+        "imagem": "img/produtos/8.png",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "9": {
+        "nome": "Cafe com Leite",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Café da Manhã",
+        "imagem": "img/produtos/9.png",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "11": {
+        "nome": "Cuscuz com Carne",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "12": {
+        "nome": "Cuscuz com Carne Seca",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "13": {
+        "nome": "Cuscuz com Frango",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "14": {
+        "nome": "Cuscuz com Manteiga",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "15": {
+        "nome": "Cuscuz com Ovo",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "16": {
+        "nome": "Cuscuz com Queijo",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "17": {
+        "nome": "MISTO QUENTE",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "18": {
+        "nome": "Pao com Manteiga",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "19": {
+        "nome": "Pastel de Queijo",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Lanches"
+    },
+    "20": {
+        "nome": "Pao com ovo",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "21": {
+        "nome": "PAO C OVO E QUEIJO",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "22": {
+        "nome": "PAO COM QUEIJO",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "23": {
+        "nome": "Tapioca",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "24": {
+        "nome": "Tapioca com Carne",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "25": {
+        "nome": "Tapioca com Carne Seca",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "26": {
+        "nome": "Tapioca Com Frango",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "27": {
+        "nome": "Tapioca com Manteiga",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "28": {
+        "nome": "Tapioca com Ovo",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "29": {
+        "nome": "Tapioca com Queijo",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Café da Manhã"
+    },
+    "50": {
+        "nome": "Bolo Fatia",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "51": {
+        "nome": "BOMBA",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "52": {
+        "nome": "CHEETOS",
+        "preco": 11.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "53": {
+        "nome": "COXINHA",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "54": {
+        "nome": "DORITOS",
+        "preco": 15.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "55": {
+        "nome": "Enrolado de Salsicha",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "56": {
+        "nome": "Folheados",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "57": {
+        "nome": "KIBE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "58": {
+        "nome": "Pastel de Carne",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "SALGADOS"
+    },
+    "59": {
+        "nome": "Pastel de Carne Seca",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "SALGADOS"
+    },
+    "60": {
+        "nome": "Pastel de Frango",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "SALGADOS"
+    },
+    "61": {
+        "nome": "Pastel Misto",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "SALGADOS"
+    },
+    "62": {
+        "nome": "Pastel Misto",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "SALGADOS"
+    },
+    "63": {
+        "nome": "SALGADO CARNE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS",
+        "bloqueado": "nao"
+    },
+    "64": {
+        "nome": "SALGADO DE FRANGO",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS",
+        "bloqueado": "nao"
+    },
+    "65": {
+        "nome": "Salgado Frito",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "66": {
+        "nome": "SALSITO",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS",
+        "bloqueado": "nao"
+    },
+    "67": {
+        "nome": "TAXA DE ENTREGA",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "68": {
+        "nome": "TORCIDA",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "SALGADOS"
+    },
+    "100": {
+        "nome": "Batata da vó Bila",
+        "preco": 25.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "101": {
+        "nome": "Batata Frita 300g",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "102": {
+        "nome": "Carne Seca Completo",
+        "preco": 39.9,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "103": {
+        "nome": "TABUA FRIA",
+        "preco": 15.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "104": {
+        "nome": "Trinchado completo",
+        "preco": 28.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "105": {
+        "nome": "Trinchado de carne",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "APERITIVOS"
+    },
+    "200": {
+        "nome": "Almoco",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "201": {
+        "nome": "Arroz",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "202": {
+        "nome": "Assado de panela",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "203": {
+        "nome": "BAIAO",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "204": {
+        "nome": "BIFE ACEBOLADO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "205": {
+        "nome": "Calabresa Acebolada",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "207": {
+        "nome": "caldo de carne",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "208": {
+        "nome": "caldo de mocoto",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "209": {
+        "nome": "Camarao alho e oleo",
+        "preco": 29.9,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": 19.9,
+            "inicio": "00:00",
+            "fim": "23:00",
+            "dias": [
+                3
+            ]
+        },
+        "impressora": "pratos",
+        "setor": "Petiscos e Porções"
+    },
+    "210": {
+        "nome": "CANJA",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "211": {
+        "nome": "CARNEIRO COZIDO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "212": {
+        "nome": "COSTELA COZIDA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "214": {
+        "nome": "Estrogonofe de Frango",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "215": {
+        "nome": "FEIJOADA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "216": {
+        "nome": "FIGADO ACEBOLADO",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "217": {
+        "nome": "FILE DE FRANGO",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "218": {
+        "nome": "FILE DE PORCO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "219": {
+        "nome": "FRANGO A PASSARINHA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "220": {
+        "nome": "FRANGO AO MOLHO",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "221": {
+        "nome": "FRANGO ASSADO",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "222": {
+        "nome": "Jantinha",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "223": {
+        "nome": "JANTINHA 18",
+        "preco": 18.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "224": {
+        "nome": "PANELADA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "225": {
+        "nome": "Pao de queijo",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": 1.0,
+            "inicio": "00:00",
+            "fim": "23:59",
+            "dias": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        "impressora": "cozinha",
+        "setor": "PRATOS"
+    },
+    "226": {
+        "nome": "PARMEGIANA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "227": {
+        "nome": "FILE DE PEIXE FRITO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "228": {
+        "nome": "PICADINHO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "229": {
+        "nome": "PORCO COZIDO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "230": {
+        "nome": "PRODUTO VARIADO",
+        "preco": 0.0,
+        "unidade": "valor",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "231": {
+        "nome": "SARRABULHO",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "232": {
+        "nome": "X Burguer",
+        "preco": 17.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS",
+        "bloqueado": "nao"
+    },
+    "233": {
+        "nome": "X Salada",
+        "preco": 23.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "234": {
+        "nome": "X Tudo",
+        "preco": 27.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS"
+    },
+    "301": {
+        "nome": "CASCAO",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "302": {
+        "nome": "Milk Shake",
+        "preco": 15.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "303": {
+        "nome": "Pudim",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "304": {
+        "nome": "SORVETE BOLA",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "305": {
+        "nome": "Sunday",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "306": {
+        "nome": "TORTINHA",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "SOBREMESAS"
+    },
+    "400": {
+        "nome": "Agua c/  Gas",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "401": {
+        "nome": "Agua Mineral",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "402": {
+        "nome": "AMSTEL",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "403": {
+        "nome": "BRAHMA DUPLO MALTE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "404": {
+        "nome": "BRAHMA PILSEN",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "405": {
+        "nome": "BUDWEISER",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "406": {
+        "nome": "CAPPUCCINO PEQUENO",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "407": {
+        "nome": "Cerveja Lata",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "408": {
+        "nome": "Corona",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "409": {
+        "nome": "CORONA LATA",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "410": {
+        "nome": "DEL VALE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "411": {
+        "nome": "DOSE",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "412": {
+        "nome": "GATORADE",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "413": {
+        "nome": "H2O",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "414": {
+        "nome": "Heineken",
+        "preco": 8.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": 7.49,
+            "inicio": "18:00",
+            "fim": "22:30",
+            "dias": [
+                3
+            ]
+        },
+        "impressora": "cozinha",
+        "setor": "Bebidas",
+        "imagem": "img/produtos/414.png",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "415": {
+        "nome": "HEINEKEN LATA",
+        "preco": 7.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "416": {
+        "nome": "JARRA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "417": {
+        "nome": "ks sabores",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "418": {
+        "nome": "Monster grande",
+        "preco": 14.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "419": {
+        "nome": "Monster pequeno",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "420": {
+        "nome": "Pitchulinha",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "421": {
+        "nome": "QUARTEIRÃO",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "422": {
+        "nome": "Red bull pequeno",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "423": {
+        "nome": "Refrigerante 1l",
+        "preco": 11.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "424": {
+        "nome": "Refrigerante 2l",
+        "preco": 15.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "425": {
+        "nome": "Refrigerante Lata",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "426": {
+        "nome": "Skolzinha",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "427": {
+        "nome": "Stella",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "BEBIDAS"
+    },
+    "428": {
+        "nome": "Suco",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "429": {
+        "nome": "SUCO 500ML",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "430": {
+        "nome": "SUCO DE 1L",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "500": {
+        "nome": "BOLO DE POTE",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "501": {
+        "nome": "Chiclete",
+        "preco": 0.25,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "502": {
+        "nome": "chiclete acido",
+        "preco": 0.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "503": {
+        "nome": "Halls",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "504": {
+        "nome": "MINI VULCAO",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "DOCES"
+    },
+    "505": {
+        "nome": "pirulito",
+        "preco": 1.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "506": {
+        "nome": "pirulito pequeno",
+        "preco": 0.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "507": {
+        "nome": "Trident",
+        "preco": 3.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "508": {
+        "nome": "Trufa",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "DOCES"
+    },
+    "600": {
+        "nome": "1/2 panelada",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "OUTROS"
+    },
+    "601": {
+        "nome": "Refrigerante de 600ml",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "OUTROS"
+    },
+    "602": {
+        "nome": "Sonho",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "OUTROS"
+    },
+    "300": {
+        "nome": "Produto Variado",
+        "unidade": "valor",
+        "impressora": "cozinha",
+        "setor": "Outros"
+    },
+    "49": {
+        "nome": "ESFIHA",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Lanches"
+    },
+    "206": {
+        "nome": "MEIO CALDO",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "PRATOS",
+        "tem_submenu": "sim",
+        "submenu": [
+            {
+                "codigo": "206-SUB1",
+                "nome": "MEIO CALDO DE CARNE",
+                "preco": 5.0
+            },
+            {
+                "codigo": "206-SUB2",
+                "nome": "MEIO CALDO DE MOCOTO",
+                "preco": 5.0
+            }
+        ]
+    },
+    "235": {
+        "nome": "FEIJÃO",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos"
+    },
+    "30": {
+        "nome": "CAPPUCCINO QUENTE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Café da Manhã"
+    },
+    "431": {
+        "nome": "DOSE WHISKY",
+        "preco": 15.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "432": {
+        "nome": "Sheweppes",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "433": {
+        "nome": "Agua Tonica",
+        "preco": 6.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "509": {
+        "nome": "FINI",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "OUTROS"
+    },
+    "434": {
+        "nome": "Ice Vodka",
+        "preco": 9.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "BEBIDAS"
+    },
+    "69": {
+        "nome": "Pastel de Frango c Catupiry",
+        "preco": 11.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Lanches"
+    },
+    "70": {
+        "nome": "PASTEL DE VENTO",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pastéis"
+    },
+    "31": {
+        "nome": "CHOCOLATE QUENTE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "435": {
+        "nome": "Refri 1l",
+        "preco": 13.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "450": {
+        "nome": "Quasteirao Dreher",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "9000": {
+        "nome": "_",
+        "preco": -12.0,
+        "unidade": "desconto",
+        "impressora": "cozinha",
+        "setor": "Outros"
+    },
+    "307": {
+        "nome": "MOUSSE",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Sobremesas"
+    },
+    "436": {
+        "nome": "Dose de vinho",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas"
+    },
+    "437": {
+        "nome": "CAFE EXPRESS",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Bebidas"
+    },
+    "75": {
+        "nome": "MINI PIZZA",
+        "preco": 7.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Lanches"
+    },
+    "71": {
+        "nome": "Pastel de Carne c Queijo",
+        "preco": 11.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pastéis"
+    },
+    "7001": {
+        "nome": "CAFES",
+        "preco": 3.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas",
+        "tem_submenu": "sim",
+        "submenu": [
+            {
+                "codigo": "7001-SUB1",
+                "nome": "CAFÉ TRADICIONAL",
+                "preco": 3.0
+            },
+            {
+                "codigo": "7001-SUB2",
+                "nome": "CAFÉ COM LEITE",
+                "preco": 4.0
+            },
+            {
+                "codigo": "7001-SUB3",
+                "nome": "CAFÉ EXPRESSO",
+                "preco": 5.0
+            },
+            {
+                "codigo": "7001-SUB4",
+                "nome": "MOCCIATO PEQUENO",
+                "preco": 7.0
+            },
+            {
+                "codigo": "7001-SUB5",
+                "nome": "MOCCIATO GRANDE",
+                "preco": 10.0
+            }
+        ]
+    },
+    "76": {
+        "nome": "Ruffles",
+        "preco": 10.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "236": {
+        "nome": "MARMITA PEQUENA",
+        "preco": 12.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Sorvetes",
+        "tem_submenu": "sim",
+        "submenu": [
+            {
+                "codigo": "236-SUB1",
+                "nome": "PANELADA PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB2",
+                "nome": "FEIJOADA PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB3",
+                "nome": "CARNE DE PANELA PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB4",
+                "nome": "COSTELA DE BOI PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB5",
+                "nome": "FILE DE FRANGO PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB6",
+                "nome": "CARNEIRO COZIDO PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB7",
+                "nome": "CALABRESA PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB8",
+                "nome": "SARRABULHO PQ",
+                "preco": 12.0
+            },
+            {
+                "codigo": "236-SUB9",
+                "nome": "FRANGO AO MOLHO PQ",
+                "preco": 12.0
+            }
+        ],
+        "bloqueado": "nao"
+    },
+    "438": {
+        "nome": "Eisen Pilsen",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "sobremesas",
+        "setor": "Bebidas",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "510": {
+        "nome": "Tira Fresh",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "237": {
+        "nome": "potinho de salada",
+        "preco": 2.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "238": {
+        "nome": "PEIXADA",
+        "preco": 20.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "511": {
+        "nome": "Pirolé",
+        "preco": 5.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "512": {
+        "nome": "DipCaveira",
+        "preco": 4.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "239": {
+        "nome": "MISTURA",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Açaí/Sorvete",
+        "imagem": "",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "240": {
+        "nome": "MIST. FILE DE FRANGO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "241": {
+        "nome": "MIST. COSTELA",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "242": {
+        "nome": "MIST. PORCO COZIDO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "243": {
+        "nome": "MIST. CARNE DE PANELA",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "513": {
+        "nome": "BALA MENTOS",
+        "preco": 3.5,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "439": {
+        "nome": "Eisen Pilsen 600ml",
+        "preco": 8.0,
+        "unidade": "un",
+        "abrir_qtd": "sim",
+        "abrir_obs": "nao",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "244": {
+        "nome": "MIST. PEIXE FRITO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "245": {
+        "nome": "MIST. CARNEIRO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "246": {
+        "nome": "MIST. SARRABULHO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "247": {
+        "nome": "MIST. CALABRESA",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "248": {
+        "nome": "MIST. FILE DE PORCO",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "249": {
+        "nome": "MIST. FEIJOADA",
+        "preco": 60.0,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "pratos",
+        "setor": "Pratos",
+        "tem_submenu": "nao",
+        "submenu": []
+    },
+    "10": {
+        "nome": "Acai KG",
+        "preco": 49.9,
+        "unidade": "kg",
+        "promocao": {
+            "preco": null,
+            "inicio": null,
+            "fim": null,
+            "dias": []
+        },
+        "impressora": "cozinha",
+        "setor": "Outros",
+        "imagem": "img/produtos/10.png",
+        "bloqueado": "nao",
+        "tem_submenu": "nao",
+        "submenu": []
+    }
+}
