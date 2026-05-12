@@ -1,0 +1,23 @@
+{
+  "produtos": {},
+  "layout": {
+    "banners_index": [],
+    "banner_intervalo_ms": 5000,
+    "cor_topo": "",
+    "cor_texto_topo": "",
+    "nome_logo": "",
+    "logo_topo": "",
+    "cor_hover_produto": "",
+    "cor_texto_hover_produto": "",
+    "cor_botao_hover_produto": "",
+    "cor_texto_botao_hover_produto": "",
+    "cor_rodape": "",
+    "cor_texto_rodape": "",
+    "logo_rodape": ""
+  },
+  "operacao": {
+    "fechado": false,
+    "fechado_ate": "",
+    "mensagem_fechado": "Delivery temporariamente fechado. Tente novamente mais tarde."
+  }
+}

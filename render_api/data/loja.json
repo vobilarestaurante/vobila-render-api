@@ -1,0 +1,11 @@
+{
+  "nome": "Vobila",
+  "email": "",
+  "cidade": "",
+  "pix": {
+    "modo": "estatico",
+    "chave": "",
+    "access_token": "",
+    "descricao": "Pedido Vobila"
+  }
+}
