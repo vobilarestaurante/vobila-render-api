@@ -10,6 +10,7 @@ from typing import Any
 import qrcode
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 
@@ -22,11 +23,16 @@ DELIVERY_CONFIG_PATH = DATA_DIR / "delivery_web.json"
 CLIENTES_PATH = DATA_DIR / "clientes_web.json"
 PEDIDOS_PATH = DATA_DIR / "pedidos_web.json"
 LOJA_PATH = DATA_DIR / "loja.json"
+UPLOADS_DIR = DATA_DIR / "uploads"
 ADMIN_TOKEN = str(os.getenv("ADMIN_TOKEN", "") or "").strip()
 
 
 def ensure_data_dir() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def ensure_uploads_dir() -> None:
+    UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def read_json(path: Path, default: Any) -> Any:
@@ -290,6 +296,11 @@ class AdminProdutosPayload(BaseModel):
     produtos: dict[str, dict[str, Any]]
 
 
+class AdminAssetPayload(BaseModel):
+    filename: str
+    content_base64: str
+
+
 app = FastAPI(title="Vobila Delivery API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
@@ -298,6 +309,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+ensure_uploads_dir()
+app.mount("/uploads", StaticFiles(directory=str(UPLOADS_DIR)), name="uploads")
 
 
 @app.get("/health")
@@ -311,6 +324,20 @@ def require_admin_token(x_admin_token: str | None) -> None:
     recebido = str(x_admin_token or "").strip()
     if not recebido or not compare_digest(recebido, ADMIN_TOKEN):
         raise HTTPException(status_code=401, detail="Token administrativo invalido.")
+
+
+def safe_upload_filename(filename: str) -> str:
+    raw_name = Path(str(filename or "imagem")).name
+    stem = Path(raw_name).stem or "imagem"
+    suffix = Path(raw_name).suffix.lower()
+    allowed_suffixes = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico"}
+    if suffix not in allowed_suffixes:
+        raise HTTPException(status_code=400, detail="Formato de imagem nao permitido.")
+
+    safe_stem = "".join(char if char.isalnum() or char in ("-", "_") else "_" for char in stem).strip("_")
+    safe_stem = safe_stem[:70] or "imagem"
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S%f")
+    return f"{safe_stem}_{timestamp}{suffix}"
 
 
 @app.get("/produtos")
@@ -478,6 +505,29 @@ def pix_status(payload: PixPayload) -> dict[str, Any]:
             "mensagem": "Verificacao automatica ainda nao configurada neste backend Render.",
         },
     }
+
+
+@app.post("/admin/uploads")
+def admin_upload_asset(
+    payload: AdminAssetPayload,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    filename = safe_upload_filename(payload.filename)
+    try:
+        raw = base64.b64decode(str(payload.content_base64 or ""), validate=True)
+    except Exception:
+        raise HTTPException(status_code=400, detail="Imagem em base64 invalida.")
+
+    if not raw:
+        raise HTTPException(status_code=400, detail="Imagem vazia.")
+    if len(raw) > 8 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Imagem maior que 8 MB.")
+
+    ensure_uploads_dir()
+    destino = UPLOADS_DIR / filename
+    destino.write_bytes(raw)
+    return {"ok": True, "path": f"/uploads/{filename}"}
 
 
 @app.put("/admin/produtos/{codigo}")
