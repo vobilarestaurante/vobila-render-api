@@ -486,6 +486,37 @@ def create_pedido(payload: PedidoPayload) -> dict[str, Any]:
     }
 
 
+@app.get("/admin/pedidos-pendentes")
+def admin_get_pedidos_pendentes(
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    pedidos = [
+        pedido
+        for pedido in read_pedidos()
+        if not bool(pedido.get("importado_pdv", False))
+    ]
+    return {"ok": True, "pedidos": pedidos}
+
+
+@app.post("/admin/pedidos/{numero}/importado")
+def admin_mark_pedido_importado(
+    numero: str,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    numero_limpo = str(numero or "").strip()
+    pedidos = read_pedidos()
+    for pedido in pedidos:
+        if str(pedido.get("numero", "")).strip() != numero_limpo:
+            continue
+        pedido["importado_pdv"] = True
+        pedido["data_importacao_pdv"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        write_pedidos(pedidos)
+        return {"ok": True, "pedido": pedido}
+    raise HTTPException(status_code=404, detail="Pedido nao encontrado.")
+
+
 @app.post("/pix")
 def create_pix(payload: PixPayload) -> dict[str, Any]:
     if payload.valor <= 0:
