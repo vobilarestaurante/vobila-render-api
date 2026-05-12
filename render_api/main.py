@@ -3,11 +3,12 @@ import io
 import json
 import os
 from datetime import datetime
+from hmac import compare_digest
 from pathlib import Path
 from typing import Any
 
 import qrcode
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -21,6 +22,7 @@ DELIVERY_CONFIG_PATH = DATA_DIR / "delivery_web.json"
 CLIENTES_PATH = DATA_DIR / "clientes_web.json"
 PEDIDOS_PATH = DATA_DIR / "pedidos_web.json"
 LOJA_PATH = DATA_DIR / "loja.json"
+ADMIN_TOKEN = str(os.getenv("ADMIN_TOKEN", "") or "").strip()
 
 
 def ensure_data_dir() -> None:
@@ -259,6 +261,10 @@ class PedidoPayload(BaseModel):
     itens: list[PedidoItemPayload]
 
 
+class AdminProdutoPayload(BaseModel):
+    produto: dict[str, Any]
+
+
 app = FastAPI(title="Vobila Delivery API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
@@ -272,6 +278,14 @@ app.add_middleware(
 @app.get("/health")
 def health() -> dict[str, Any]:
     return {"ok": True}
+
+
+def require_admin_token(x_admin_token: str | None) -> None:
+    if not ADMIN_TOKEN:
+        raise HTTPException(status_code=503, detail="Admin token ainda nao configurado no servidor.")
+    recebido = str(x_admin_token or "").strip()
+    if not recebido or not compare_digest(recebido, ADMIN_TOKEN):
+        raise HTTPException(status_code=401, detail="Token administrativo invalido.")
 
 
 @app.get("/produtos")
@@ -440,3 +454,37 @@ def pix_status(payload: PixPayload) -> dict[str, Any]:
         },
     }
 
+
+@app.put("/admin/produtos/{codigo}")
+def admin_upsert_produto(
+    codigo: str,
+    payload: AdminProdutoPayload,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    codigo_limpo = str(codigo or "").strip()
+    if not codigo_limpo:
+        raise HTTPException(status_code=400, detail="Codigo do produto nao informado.")
+
+    produtos = read_produtos()
+    produto_normalizado = normalize_produto(codigo_limpo, payload.produto or {})
+    if not produto_normalizado.get("nome"):
+        raise HTTPException(status_code=400, detail="Nome do produto nao informado.")
+
+    produtos[codigo_limpo] = produto_normalizado
+    write_json(PRODUTOS_PATH, produtos)
+    return {"ok": True, "produto": produto_normalizado}
+
+
+@app.delete("/admin/produtos/{codigo}")
+def admin_delete_produto(
+    codigo: str,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    codigo_limpo = str(codigo or "").strip()
+    produtos = read_produtos()
+    if codigo_limpo in produtos:
+        produtos.pop(codigo_limpo, None)
+        write_json(PRODUTOS_PATH, produtos)
+    return {"ok": True}
