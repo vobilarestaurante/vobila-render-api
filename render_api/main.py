@@ -488,3 +488,40 @@ def admin_delete_produto(
         produtos.pop(codigo_limpo, None)
         write_json(PRODUTOS_PATH, produtos)
     return {"ok": True}
+
+
+@app.put("/admin/delivery-web/produtos/{codigo}")
+def admin_upsert_delivery_web_produto(
+    codigo: str,
+    payload: AdminProdutoPayload,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    codigo_limpo = str(codigo or "").strip()
+    if not codigo_limpo:
+        raise HTTPException(status_code=400, detail="Codigo do produto nao informado.")
+
+    config = read_delivery_config()
+    produtos = config.setdefault("produtos", {})
+    produto_normalizado = normalize_produto(codigo_limpo, payload.produto or {})
+    if not produto_normalizado.get("nome"):
+        raise HTTPException(status_code=400, detail="Nome do produto nao informado.")
+
+    produtos[codigo_limpo] = produto_normalizado
+    write_json(DELIVERY_CONFIG_PATH, config)
+    return {"ok": True, "produto": produto_normalizado}
+
+
+@app.delete("/admin/delivery-web/produtos/{codigo}")
+def admin_delete_delivery_web_produto(
+    codigo: str,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    codigo_limpo = str(codigo or "").strip()
+    config = read_delivery_config()
+    produtos = config.setdefault("produtos", {})
+    if codigo_limpo in produtos:
+        produtos.pop(codigo_limpo, None)
+        write_json(DELIVERY_CONFIG_PATH, config)
+    return {"ok": True}
