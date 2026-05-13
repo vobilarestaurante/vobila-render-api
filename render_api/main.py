@@ -282,7 +282,7 @@ class PedidoPayload(BaseModel):
     troco: str = ""
     latitude: str | None = None
     longitude: str | None = None
-    pagamento_online: dict[str, Any] = Field(default_factory=dict)
+    pagamento_online: dict[str, Any] | None = None
     itens: list[PedidoItemPayload]
 
 
@@ -466,7 +466,7 @@ def create_pedido(payload: PedidoPayload) -> dict[str, Any]:
         "troco": payload.troco.strip(),
         "latitude": payload.latitude,
         "longitude": payload.longitude,
-        "pagamento_online": payload.pagamento_online,
+        "pagamento_online": payload.pagamento_online or {},
         "itens": itens,
         "total": round(total, 2),
         "status": "Em aberto",
