@@ -432,26 +432,25 @@ def create_pedido(payload: PedidoPayload) -> dict[str, Any]:
     itens = []
     for item in payload.itens:
         produto_base = produtos.get(item.codigo)
-        if not produto_base:
-            raise HTTPException(status_code=400, detail=f"Produto {item.codigo} nao encontrado.")
         valor_unitario = item.valor_unitario
         if valor_unitario is None:
             valor_unitario = item.preco_unitario
         if valor_unitario is None:
-            valor_unitario = float(produto_base.get("preco", 0.0) or 0.0)
+            valor_unitario = float((produto_base or {}).get("preco", 0.0) or 0.0)
+        nome_item = item.nome or (produto_base or {}).get("nome") or f"Produto {item.codigo}"
         quantidade = float(item.quantidade or 1.0)
         total_item = round(float(valor_unitario) * quantidade, 2)
         total += total_item
         itens.append(
             {
                 "codigo": item.codigo,
-                "nome": item.nome or produto_base.get("nome", "Produto"),
+                "nome": nome_item,
                 "quantidade": quantidade,
                 "valor_unitario": float(valor_unitario),
                 "preco": total_item,
-                "impressora": item.impressora or produto_base.get("impressora", "cozinha"),
-                "setor": item.setor or produto_base.get("setor", ""),
-                "unidade": item.unidade or produto_base.get("unidade", "un"),
+                "impressora": item.impressora or (produto_base or {}).get("impressora", "cozinha"),
+                "setor": item.setor or (produto_base or {}).get("setor", ""),
+                "unidade": item.unidade or (produto_base or {}).get("unidade", "un"),
                 "observacao": item.observacao.strip(),
             }
         )
