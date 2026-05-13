@@ -299,6 +299,12 @@ class AdminAssetPayload(BaseModel):
     content_base64: str
 
 
+class AdminPedidoStatusPayload(BaseModel):
+    status: str
+    despachado: bool | None = None
+    data_despacho: str = ""
+
+
 app = FastAPI(title="Vobila Delivery API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
@@ -511,6 +517,31 @@ def admin_mark_pedido_importado(
             continue
         pedido["importado_pdv"] = True
         pedido["data_importacao_pdv"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        write_pedidos(pedidos)
+        return {"ok": True, "pedido": pedido}
+    raise HTTPException(status_code=404, detail="Pedido nao encontrado.")
+
+
+@app.post("/admin/pedidos/{numero}/status")
+def admin_update_pedido_status(
+    numero: str,
+    payload: AdminPedidoStatusPayload,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
+    require_admin_token(x_admin_token)
+    numero_limpo = str(numero or "").strip()
+    pedidos = read_pedidos()
+    for pedido in pedidos:
+        if str(pedido.get("numero", "")).strip() != numero_limpo:
+            continue
+        status = payload.status.strip()
+        if status:
+            pedido["status"] = status
+        if payload.despachado is not None:
+            pedido["despachado"] = bool(payload.despachado)
+        if payload.data_despacho:
+            pedido["data_despacho"] = payload.data_despacho.strip()
+        pedido["data_atualizacao_status"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         write_pedidos(pedidos)
         return {"ok": True, "pedido": pedido}
     raise HTTPException(status_code=404, detail="Pedido nao encontrado.")
